@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+form> div{
+  @apply flex flex-col gap-2;
+}
+
+input,
+textarea{
+  @apply shadow-md px-2 border border-slate-300;
+
+}
+/* globals.css or styles.css */
+.login-bg {
+  background-image: url('/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  backdrop-filter: blur(8px); /* Apply a blur effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input,
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color:rgb(52, 180, 244);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
